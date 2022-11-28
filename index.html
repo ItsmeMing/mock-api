@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
-</head>
-<body>
-    <script src="./index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form class="add-form">
+            <h1 id="form__header">Add User</h1>
+            <div>
+                <label for="input__img">Image</label>
+                <input type="text" id="input__img" onchange="handleImg()"/>
+            </div>
+            <div>
+                <label for="input__name">Name</label>
+                <input type="text" id="input__name" onchange="handleUserName()">
+            </div>
+            <div>
+                <label for="input__email">Email</label>
+                <input type="text" id="input__email" onchange="handleUserEmail()">
+                <p id="error-mess"></p>
+            </div>
+            <button id="submit__btn" onclick="handleAdd(event)" disabled/>Add</button>
+        </form>
+        <div class="tables"></div>
+        <script src="./index.js"></script>
+    </body>
 </html>

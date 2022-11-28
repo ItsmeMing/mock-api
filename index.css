@@ -33,3 +33,23 @@ tr td:first-child img {
     object-fit: cover;
 }
 
+.add-form {
+    width: fit-content;
+    padding: 20px;
+    background-color: violet;
+}
+
+.add-form div {
+    margin: 10px 0;
+}
+
+.add-form div label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-form div input {
+    width: 500px;
+}
+
